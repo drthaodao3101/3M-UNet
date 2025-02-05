@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <div align="center">
 <h1>3M-Unet</h1>
 <h3>Mixture of Expert with Multi-scale Feature Extraction on Mamba for Laryngoscopy Image Segmentation</h3>
@@ -134,4 +134,4 @@ python train_synapse.py  # Train and test VM-UNet on the Synapse dataset.
 ## 5. Acknowledgments
 
 - We thank the authors of [VMamba](https://github.com/MzeroMiko/VMamba) and [Swin-UNet](https://github.com/HuCaoFighting/Swin-Unet) for their open-source codes.
->>>>>>> Initial commit
+
