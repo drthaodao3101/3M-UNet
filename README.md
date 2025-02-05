@@ -12,7 +12,7 @@ Segmentation in laryngoscopy images plays a vital role in evaluating lesion edge
 
 ## Overview
 <div align="center">
-<img src="fig/3M-Unet.png" />
+<img src="fig/3munet.png" />
 </div>
 
 ## Install Repo and Env
