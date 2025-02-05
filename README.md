@@ -18,31 +18,33 @@ Segmentation in laryngoscopy images plays a vital role in evaluating lesion edge
 ## Install Repo and Env
 - Clone our repository:
   ```bash
-  git clone https://github.com/your-username/3M-Unet.git
-  cd 3M-Unet
+  git clone https://github.com/your-username/3M-Unet.git 3munet
+  cd 3munet
 
 - Requirements: requirements.txt
-  `conda create -n 3munet python=3.8`
-  `conda activate 3munet`
-  `pip install -r requirements.txt`
+   ```bash
+  conda create -n 3munet python=3.8
+  conda activate 3munet`
+  pip install -r requirements.txt
 
 ## Train: 
-`cd 3M-UNet`
-` python train_vofo.py --mode train  # Train and val 3M-UNet on our laryngoscopy image dataset.`
+`python train_vofo.py --mode train  # Train and val 3M-UNet on our laryngoscopy image dataset.`
 
-## Evaluation
+## Evaluation:
 `python train_vofo.py --mode test`
+
 
 **Note**
 If you want to visualize:
 `python train_vofo.py --mode test --visualize`
 It will save the output images in the .\result_vofo\visualize folder, with the colors specified in the config_setting_vofo.py file.
 
+
 ## Acknowledgement :heart:
 This project is based on Mamba ([paper](https://arxiv.org/abs/2402.02491), [code](https://github.com/JCruan519/VM-UNet)). Thanks for their wonderful work.
 
 ## Citation
-If you find our model useful in your research or applications, please consider giving us a star 🌟 and citing it in the following BibTeX entry.
+If you find our model that is useful in your research or applications, please consider giving us a star 🌟 and citing it in the following BibTeX entry.
 
 ```bibtex
  @article{3munet,
