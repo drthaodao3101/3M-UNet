@@ -27,6 +27,9 @@ Segmentation in laryngoscopy images plays a vital role in evaluating lesion edge
   conda activate 3munet`
   pip install -r requirements.txt
 
+## Download Dataset:
+Link to download our dataset at [Drive](https://drive.google.com/drive/folders/1Olydgl7rQTrA2dxXHhkp8BTzJ9HTe2TD?usp=drive_link)
+
 ## Train: 
 `python train_vofo.py --mode train  # Train and val 3M-UNet on our laryngoscopy image dataset.`
 
