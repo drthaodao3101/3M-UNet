@@ -12,7 +12,7 @@ Segmentation in laryngoscopy images is crucial for assessing lesion boundaries a
 
 ## Overview
 <div align="center">
-<img src="fig/3munet_overall_5.pdf" />
+<img src="fig/3munet_overall_5.png" />
 </div>
 
 ## Install Repo and Env
