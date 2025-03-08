@@ -31,7 +31,7 @@ Segmentation in laryngoscopy images is crucial for assessing lesion boundaries a
 Link to download our dataset at [Drive](https://drive.google.com/drive/folders/1Olydgl7rQTrA2dxXHhkp8BTzJ9HTe2TD?usp=drive_link)
 
 <div align="center">
-<img src="fig/dataset.png" />
+<img src="fig/Dataset.png" />
 </div>
 
 ## Train: 
