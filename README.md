@@ -56,7 +56,8 @@ If you find our model that is useful in your research or applications, please co
 ```bibtex
  @article{3munet,
   title={3M-Unet: Mixture of Expert with Multi-scale Feature Extraction on Mamba for Laryngoscopy Image Segmentation},
-  author={Thao Thi Phuong Dao, Tan-Cong Nguyen, Minh-Khoi Pham, Viet-Tham Huynh, Tuan-Luc Huynh, Trung-Nghia Le, Trong-Thuan Nguyen, Thuc Nguyen-Quang, Boi Ngoc Van, Chanh Cong Ha, Bich Anh Tran, Thanh Dinh Le, Minh-Triet Tran},
+  author={Thao Thi Phuong Dao, Tan-Cong Nguyen, Minh-Khoi Pham, Viet-Tham Huynh, Tuan-Luc Huynh, Trung-Nghia Le,
+Trong-Thuan Nguyen, Thuc Nguyen-Quang, Boi Ngoc Van, Chanh Cong Ha, Bich Anh Tran, Thanh Dinh Le, Minh-Triet Tran},
   journal={},
   year={2025}
 }
