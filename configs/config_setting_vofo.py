@@ -8,11 +8,10 @@ class setting_config:
     the config of training setting.
     """
 
-    network = '3munet'                                          #[vmunet, 3munet]
+    network = '3munet'                                          #[3munet]
     model_config = {
         'num_classes': 7,                                       
         'input_channels': 3, 
-        # ----- VM-UNet ----- #
         'depths': [2,2,2,2,2],
         'depths_decoder': [2,2,2,2,1],
         'drop_path_rate': 0.2,
