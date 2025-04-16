@@ -8,16 +8,28 @@ class setting_config:
     the config of training setting.
     """
 
-    network = 'vmunet'
+    network = '3munet'                                          #[vmunet, 3munet]
     model_config = {
-        'num_classes': 7,                                       #ntcong 6 class include background
+        'num_classes': 7,                                       
         'input_channels': 3, 
         # ----- VM-UNet ----- #
-        'depths': [2,2,2,2],
-        'depths_decoder': [2,2,2,1],
+        'depths': [2,2,2,2,2],
+        'depths_decoder': [2,2,2,2,1],
         'drop_path_rate': 0.2,
         'load_ckpt_path': './pre_trained_weights/vmamba_small_e238_ema.pth',
+       
+        
     }
+    #3M-Unet Config
+    start_epoch_best_model_saving = 0
+    condition_hd95=9.0
+    deep_supervision = False
+    deep_supervision_weight = [1.0,1.0,1.0,1.0,1.0]         #ds[0], ds[1], ds[2], ds[3], out
+    mask_update=False
+    mfe_enable=True                                         #Enable MFE module
+    mcsa_enable=True                                        #Enable MCSA module
+
+
 
     datasets = 'vofo' 
     if datasets == 'vofo':
@@ -57,8 +69,7 @@ class setting_config:
     criterion = CeDiceLoss(num_classes, loss_weight)
 
     # work_dir = 'results_vofo/' + network + '_' + datasets + '_' + datetime.now().strftime('%A_%d_%B_%Y_%Hh_%Mm_%Ss') + '/'
-
-    work_dir = "/home/dtpthao/workspace/SemSeg_VoFo/VM-UNet/results_vofo/vmunet_vofo_Tuesday_31_December_2024_08h_40m_31s/"
+    work_dir = "./results_vofo/"
 
     print_interval = 64
     val_interval = 30
@@ -100,7 +111,7 @@ class setting_config:
         weight_decay = 0.0001 # default: 0 – weight decay (L2 penalty) 
         amsgrad = False # default: False – whether to use the AMSGrad variant of this algorithm from the paper On the Convergence of Adam and Beyond
     elif opt == 'AdamW':
-        lr = 0.001 # default: 1e-3 – learning rate
+        lr = 0.0005 # default: 1e-3 – learning rate
         betas = (0.9, 0.999) # default: (0.9, 0.999) – coefficients used for computing running averages of gradient and its square
         eps = 1e-8 # default: 1e-8 – term added to the denominator to improve numerical stability
         weight_decay = 1e-2 # default: 1e-2 – weight decay coefficient
@@ -147,7 +158,7 @@ class setting_config:
         gamma = 0.99 #  – Multiplicative factor of learning rate decay.
         last_epoch = -1 # – The index of last epoch. Default: -1.
     elif sch == 'CosineAnnealingLR':
-        T_max = 50 # – Maximum number of iterations. Cosine function period.
+        T_max = 33 # – Maximum number of iterations. Cosine function period.
         eta_min = 0.00001 # – Minimum learning rate. Default: 0.
         last_epoch = -1 # – The index of last epoch. Default: -1.  
     elif sch == 'ReduceLROnPlateau':
