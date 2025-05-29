@@ -57,7 +57,7 @@ If you find our model that is useful in your research or applications, please co
  @article{3munet,
   title={3M-UNet: Dual Extraction of Multi-channel Attention and Multi-scale Feature on Mamba for Laryngoscopy Image Segmentation},
   author={Thao Thi Phuong Dao, Tan-Cong Nguyen, Minh-Khoi Pham, Viet-Tham Huynh, Tuan-Luc Huynh, Trung-Nghia Le,
-Trong-Thuan Nguyen, Thuc Nguyen-Quang, Boi Ngoc Van, Chanh Cong Ha, Bich Anh Tran, Thanh Dinh Le, Minh-Triet Tran},
+Trong-Thuan Nguyen, Thuc Nguyen-Quang, Boi Ngoc Van, Chanh Cong Ha, Bich Anh Tran, Minh-Triet Tran, Thanh Dinh Le},
   journal={},
   year={2025}
 }
